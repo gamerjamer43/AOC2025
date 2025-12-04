@@ -25,7 +25,8 @@ let bestTwo (line: char seq) =
     // return best found
     best
 
-let run () =
+// so i can either do this w a () or nothing. wtf
+let run: unit =
     // run thru best two and sum them all
     let sum: int32 =
         File.ReadLines "../input.txt"
@@ -35,4 +36,5 @@ let run () =
     // yipe
     printfn "Total voltage = %d" sum
 
-run()
+// main entry point
+run
