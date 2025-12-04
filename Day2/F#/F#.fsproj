@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>F_</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="part1.fs" />
+    <Compile Include="main.fs" />
+  </ItemGroup>
+
+</Project>
