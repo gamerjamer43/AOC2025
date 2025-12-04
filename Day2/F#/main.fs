@@ -28,9 +28,9 @@ for line: string in File.ReadLines "../input.txt" do
     for i: int64 in start .. stop do
         if Regex.IsMatch(string i, pattern) then invalid <- invalid.Add i
 
-// then we have to sum each one (READ ABOVE)
-let mutable sum: int64 = 0
-for value: int64 in invalid do
-    sum <- sum + value
+// the more you know... this functional shit is ez
+let mutable sum = 
+    invalid
+    |> Seq.sum
 
 printfn "Sum was %d" sum
